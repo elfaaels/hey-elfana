@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hey_elfana/views/call_to_action.dart';
 import 'package:hey_elfana/views/centered_view.dart';
 import 'package:hey_elfana/views/first_content.dart';
 import 'package:hey_elfana/views/navigation_bar.dart';
@@ -18,6 +19,11 @@ class HomeView extends StatelessWidget {
               child: Row(
                 children: [
                   FirstContent(),
+                  Expanded(
+                    child: Center(
+                      child: CallToAction(),
+                    ),
+                  )
                 ],
               ),
             ),

@@ -14,15 +14,33 @@ class FirstContent extends StatelessWidget {
         children: <Widget>[
           Text(
             'Elfana Anamta,\nChatya',
-            style: TextStyle(
-                fontWeight: FontWeight.w800, fontSize: 80, height: 0.9),
+            style: GoogleFonts.montserrat(
+              fontWeight: FontWeight.w600,
+              fontSize: 70,
+              height: 0.9,
+            ),
           ),
           SizedBox(
             height: 30,
           ),
           Text(
             'A Passionate Engineer - Coder - Whatsoever.',
-            style: GoogleFonts.poppins(fontSize: 21, height: 1.7),
+            style: GoogleFonts.poppins(
+              fontSize: 21,
+              height: 1.7,
+              color: Colors.grey,
+            ),
+          ),
+          SizedBox(
+            height: 20,
+          ),
+          Text(
+            'github.com/codesbyel',
+            style: GoogleFonts.poppins(
+              fontSize: 18,
+              height: 1.7,
+              color: Colors.grey,
+            ),
           ),
         ],
       ),
