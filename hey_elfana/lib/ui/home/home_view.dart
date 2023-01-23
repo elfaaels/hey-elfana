@@ -34,17 +34,19 @@ class HomeView extends StatelessWidget {
             : null,
         backgroundColor: Colors.white,
         body: FadeInDown(
-          child: CenteredView(
-            child: Column(
-              children: [
-                NavBar(),
-                Expanded(
-                  child: ScreenTypeLayout(
-                    mobile: HomeContentSmall(),
-                    tablet: HomeContentLarge(),
-                  ),
-                )
-              ],
+          child: SafeArea(
+            child: CenteredView(
+              child: Column(
+                children: [
+                  NavBar(),
+                  Expanded(
+                    child: ScreenTypeLayout(
+                      mobile: HomeContentSmall(),
+                      tablet: HomeContentLarge(),
+                    ),
+                  )
+                ],
+              ),
             ),
           ),
         ),
