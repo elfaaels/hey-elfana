@@ -1,9 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:hey_elfana/ui/navbar/navbar_item.dart';
 
-class NavBarTablet extends StatelessWidget {
+class NavBarTablet extends StatefulWidget {
   const NavBarTablet({Key? key}) : super(key: key);
 
+  @override
+  State<NavBarTablet> createState() => _NavBarTabletState();
+}
+
+class _NavBarTabletState extends State<NavBarTablet> {
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -19,11 +24,47 @@ class NavBarTablet extends StatelessWidget {
             mainAxisSize: MainAxisSize.min,
             children: [
               // Navbar Item
-              NavBarItem('Github'),
+              Column(
+                children: [
+                  NavBarItem(title: "Github"),
+                  SizedBox(height: 3),
+                  Container(
+                    width: 70,
+                    height: 1,
+                    decoration: BoxDecoration(
+                      color: Colors.black,
+                    ),
+                  ),
+                ],
+              ),
               SizedBox(width: 60),
-              NavBarItem('Linkedin'),
+              Column(
+                children: [
+                  NavBarItem(title: 'Linkedin'),
+                  SizedBox(height: 3),
+                  Container(
+                    width: 95,
+                    height: 1,
+                    decoration: BoxDecoration(
+                      color: Colors.black,
+                    ),
+                  ),
+                ],
+              ),
               SizedBox(width: 60),
-              NavBarItem('Spotify'),
+              Column(
+                children: [
+                  NavBarItem(title: 'Spotify'),
+                  SizedBox(height: 3),
+                  Container(
+                    width: 80,
+                    height: 1,
+                    decoration: BoxDecoration(
+                      color: Colors.black,
+                    ),
+                  ),
+                ],
+              ),
             ],
           ),
         ],

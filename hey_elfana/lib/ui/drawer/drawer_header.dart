@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class NavBarDrawerHeader extends StatelessWidget {
   const NavBarDrawerHeader({Key? key}) : super(key: key);
@@ -14,19 +15,20 @@ class NavBarDrawerHeader extends StatelessWidget {
         children: [
           Text(
             'Get To Know',
-            style: TextStyle(
+            style: GoogleFonts.firaCode(
               fontSize: 18,
-              fontWeight: FontWeight.w800,
+              height: 1.7,
               color: Colors.white,
+              fontWeight: FontWeight.w700,
             ),
           ),
           SizedBox(height: 10),
           Text(
             'Tap Here',
-            style: TextStyle(
-              // fontSize: 18,
-              // fontWeight: FontWeight.w800,
+            style: GoogleFonts.firaCode(
+              height: 1.7,
               color: Colors.white,
+              fontWeight: FontWeight.w500,
             ),
           ),
         ],
