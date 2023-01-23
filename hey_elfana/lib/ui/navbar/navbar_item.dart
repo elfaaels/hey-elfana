@@ -14,7 +14,7 @@ class NavBarItem extends StatelessWidget {
       onTap: null,
       child: Text(
         title!,
-        style: GoogleFonts.roboto(
+        style: GoogleFonts.firaCode(
           fontSize: 18,
         ),
       ),
