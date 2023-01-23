@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 
-class CallToAction extends StatelessWidget {
-  const CallToAction({Key? key}) : super(key: key);
+class CTALarge extends StatelessWidget {
+  const CTALarge({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 60, vertical: 15),
       child: Text(
-        'Get To Know',
+        'Hire Me!',
         style: TextStyle(
           fontSize: 18,
           fontWeight: FontWeight.w800,
@@ -16,7 +16,7 @@ class CallToAction extends StatelessWidget {
         ),
       ),
       decoration: BoxDecoration(
-        color: Color.fromARGB(255, 31, 229, 146),
+        color: Colors.black,
         borderRadius: BorderRadius.circular(5),
       ),
     );
