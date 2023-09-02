@@ -37,7 +37,7 @@ class _CTALargeState extends State<CTALarge> {
     return GestureDetector(
       onTap: launchInBrowser,
       child: Container(
-        padding: const EdgeInsets.symmetric(horizontal: 60, vertical: 15),
+        padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 10),
         child: Text(
           'Hire Me',
           style: GoogleFonts.firaCode(

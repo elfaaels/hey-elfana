@@ -16,12 +16,16 @@ class FirstContent extends StatelessWidget {
                 : TextAlign.center;
         double titleSize =
             sizingInformation.deviceScreenType == DeviceScreenType.mobile
-                ? 30
-                : 70;
+                ? 25
+                : 60;
         double descSize =
             sizingInformation.deviceScreenType == DeviceScreenType.mobile
                 ? 15
                 : 21;
+        double extraSize =
+            sizingInformation.deviceScreenType == DeviceScreenType.mobile
+                ? 15
+                : 40;
         CrossAxisAlignment crossAxisType =
             sizingInformation.deviceScreenType == DeviceScreenType.desktop
                 ? CrossAxisAlignment.start
@@ -34,7 +38,7 @@ class FirstContent extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 Text(
-                  'Elfana A. Chatya',
+                  'Software Engineer,',
                   style: GoogleFonts.rubik(
                     fontWeight: FontWeight.w600,
                     fontSize: titleSize,
@@ -42,17 +46,17 @@ class FirstContent extends StatelessWidget {
                   ),
                   textAlign: textAlignment,
                 ),
-                SizedBox(height: 30),
                 Text(
-                  'Passionate Software Engineer',
-                  style: GoogleFonts.firaCode(
-                    fontSize: descSize,
-                    height: 1.7,
+                  ' Mobile.',
+                  style: GoogleFonts.rubik(
+                    fontWeight: FontWeight.w600,
+                    fontSize: extraSize,
+                    height: 0.9,
                     color: Colors.grey,
                   ),
                   textAlign: textAlignment,
                 ),
-                SizedBox(height: 20),
+                SizedBox(height: 25),
                 Text(
                   '© 2023 Elfaael. All Rights Reserved.',
                   style: GoogleFonts.rubik(

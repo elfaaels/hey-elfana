@@ -7,20 +7,17 @@ class HomeContentLarge extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        Expanded(
-          child: Row(
-            children: [
-              FirstContent(),
-              Expanded(
-                child: Center(
-                  child: CallToAction(),
-                ),
-              )
-            ],
-          ),
+        Row(
+          children: [
+            Expanded(child: FirstContent()),
+          ],
         ),
+        SizedBox(height: 40),
+        CallToAction(),
       ],
     );
   }

@@ -12,7 +12,7 @@ class HomeContentSmall extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         FirstContent(),
-        SizedBox(height: 100),
+        SizedBox(height: 40),
         CallToAction(),
       ],
     );

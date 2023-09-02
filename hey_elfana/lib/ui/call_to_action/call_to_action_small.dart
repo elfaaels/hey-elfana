@@ -32,7 +32,8 @@ class _CTASmallState extends State<CTASmall> {
     return GestureDetector(
       onTap: launchInBrowser,
       child: Container(
-        height: 60,
+        height: 50,
+        width: 150,
         alignment: Alignment.center,
         child: Text(
           'Hire Me',
